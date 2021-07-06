@@ -14,7 +14,7 @@ jobs:
           command: bundle -v
       - run:
           name: Run bundle
-          command: ruby/bundle-install
+          command: bundle install
       # — run:
       #     name: Run RSpec Tests
       #     command: |
