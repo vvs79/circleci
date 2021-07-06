@@ -16,6 +16,9 @@ jobs:
           name: Run bundle
           command: bundle install
       - run:
+          name: Run Rubocop
+          command: rubocop --auto-correct-all
+      - run:
           name: Run RSpec Tests
           command: |
             mkdir /tmp/test-results
