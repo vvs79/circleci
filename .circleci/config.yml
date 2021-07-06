@@ -9,12 +9,12 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
-      - run:
-          name: Which bundler?
-          command: bundle -v
-      - run:
-          name: Run bundle
-          command: bundle install
+      # - run:
+      #     name: Which bundler?
+      #     command: bundle -v
+      # - run:
+      #     name: Run bundle
+      #     command: bundle install
       — run:
           name: Run RSpec Tests
           command: mkdir /tmp/test-results
